@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+<style>
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+p.center {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}
+
+.color {
+  background: rgb(194, 255, 28);
+
+  border-style: dashed;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.text{
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  text-align: center;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+.example {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: rgb(255, 217, 0);}
+  to {background-color: rgb(0, 46, 14);}
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-shadow: 2px 2px red;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.shadow {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue;
+  transition: width 2s, height 4s;
+}
+
+.shadow:hover {
+  width: 300px;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html">Самостійна робота 1</a>
+<p id="para1">Hello World!</p>
+<p>Цей параграф не залежить від стилю</p>
+
+<h1 class="center">Цей заголовок не змінюється</h1>
+<p class="center">Цей параграф червоний і вирівняний по центру</p>
+<p class="center large">Цей параграф червоний і вирівняний по центру + великий шрифт</p>
+
+<p style="background-color:rgb(43, 155, 86);">Lorem ipsum...</p>
+
+<div class="color" style="opacity:0.3;">
+    <h1>30% opacity</h1>
+</div>
+
+<div class="text">some text</div>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+<ul class="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+  
+<table>
+    <tr>
+      <th>Ім’я</th>
+      <th>Прізвище</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+    </tr>
+  </table>
+
+
+<p id="rcorners1">Rounded corners!</p>
+
+<div class="example"></div>
+
+<div class="tooltip">Hover over me
+    <span class="tooltiptext">Tooltip text</span>
+</div>
+  
+<button class="button">Button</button>
+
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+</div>
+
+<div class="dropdown">
+    <span>Mouse over me</span>
+    <div class="dropdown-content">
+    <p>Hello World!</p>
+    </div>
+</div>
+
+<div class="shadow"></div>
+</body>
+</html>
